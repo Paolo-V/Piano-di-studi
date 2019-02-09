@@ -1,0 +1,55 @@
+% CdL 1
+% Scienze biologiche
+int: c_min = 100; % min amount of credits for core activities
+int: c_max = 120; % max amount of credits for core activities
+int: a_min = 50;  % min amount of credits for supplementary activities
+int: a_max = 70;  % max amount of credits for supplementary activities
+int: t = 12;      % credits for final examination
+int: nc = 18;     % no. of core activities
+int: na = 14;     % no. of supplementary activities 
+int: ncSSDs = 11; % no. of distinct SSDs for core activities
+int: naSSDs = 7;  % no. of distinct SSDs for supplementary activities
+
+cSSDs = ["BIO/04", "BIO/05", "BIO/06", "BIO/07", "BIO/10", "BIO/11", "BIO/18", "BIO/19", "MED/04", "MED/42", "MED/46"];
+cname = ["Chimica biologica                            ",
+         "Microbiologia                                ",
+         "Igiene                                       ",
+         "Biologia animale e vegetale                  ",
+         "Fisiologia vegetale                          ",
+         "Ecologia applicata                           ",
+         "Genetica                                     ",
+         "Biologia molecolare                          ",
+         "Embriologia                                  ", 
+         "Patologia generale                           ",
+         "Ematologia                                   ",
+         "Biologia marina                              ",
+         "Igiene vaccini e vaccinazione                ",
+         "Ecotossicologia                              ",
+         "Modellistica 3D di componenti cellulari      ",
+         "Biochimica metabolica                        ",
+         "Diagnosi molecolari                          ",
+         "Legislazione sanitaria                       "];
+cSSD = [ 5,  8, 10,  2,  1,  4,  7,  6,  3,  9,  3,  4, 10,  4,  2,  5, 11, 10];
+ccfu = [12, 12,  9,  9, 12,  9,  9, 12, 12,  9, 12,  9, 12,  9,  9, 12, 12,  9];
+cy =   [ 1,  1,  1,  1,  1,  1,  2,  2,  2,  2,  2,  2,  3,  3,  3,  3,  3,  3]; 
+ct =   [ 1,  1,  1,  2,  2,  2,  1,  1,  1,  2,  2,  2,  1,  1,  1,  2,  2,  2];
+
+aSSDs = ["AGR/02", "BIO/05", "BIO/06", "BIO/12", "GEO/06", "MED/03", "VET/03"]; 
+aname = ["Etologia                                     ",
+         "Biologia delle cellule staminali             ",
+         "Patologia generale veterinaria               ",
+         "Agronomia                                    ",
+         "Complementi di biochimica                    ",
+         "Zoologia evoluzionistica                     ",
+         "Istologia degli apparati                     ",
+         "Mineralogia                                  ",
+         "Tecniche citologiche e istologiche           ",
+         "Biochimica clinica                           ",
+         "Patologia degli animali marini               ",
+         "Anatomia comparata                           ",
+         "Laboratorio clinico                          ",
+         "Genetica medica                              "];
+aSSD = [ 2,  3,  7,  1,  4,  2,  3,  5,  3,  4,  7,  3,  4,  6]; 
+acfu = [ 6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6];
+ay =   [ 1,  1,  1,  1,  2,  2,  2,  2,  3,  3,  3,  3,  3,  3];
+at =   [ 1,  1,  2,  2,  1,  1,  2,  2,  1,  1,  1,  2,  2,  2];
